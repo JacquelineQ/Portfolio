@@ -13,8 +13,10 @@
 
 function toggleMenu() {
     let navLinks = document.getElementById('nav-links-container');
+    // let body = document.getElementByClass('body');
     // let closeIcon= document.getElementById('close-icon');
     navLinks.classList.toggle('active')
     // closeIcon.classList.toggle('active')
- 
+//    body.classList.toggle('hidden')
+
 }
