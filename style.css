@@ -9,6 +9,12 @@ body {
     background-color: #b81365;
 }
 
+#nav-contact-icons-container {
+    /*does not display contact icons in navbar on mobile*/
+    display: none;
+}
+
+
 .menu-icon {
     filter: invert(1);
 }
@@ -74,17 +80,21 @@ body {
 
 #homepage-text p {
     font-size: 30px;
-    padding: 20px;
+    padding: 10px;
+}
+
+.large-profile-img {
+    display: none;
 }
 
 h1 {
-    font-size: 40px;
-    padding: 20px;
+    font-size: 30px;
+    padding: 10px;
 }
 
 p {
     font-size: 20px;
-    padding: 20px; 
+    padding: 10px; 
 }
 
 a.linkedin-logo {
@@ -92,15 +102,32 @@ a.linkedin-logo {
   
 }
 
+#body-github-logo {
+    height: 20px;
+    width: 20px;
+    filter: invert(1);
+   
+}
 
 
-.contact-icons-container {
+
+#body-contact-icons-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
 /* Projects Page */
+
+div.project-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.project-page-container h1{
+    padding: 10px;
+}
 
 #project-card-container {
     display: flex;
@@ -112,10 +139,16 @@ a.linkedin-logo {
     background-color: #140d4f;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 300px;
-    height: 300px;
+    height: 400px;
     margin: 15px;
     text-align: center;
 
+}
+
+.github-logo {
+    filter: invert(1);
+    height: 30px;
+    width: 30px;
 }
 
 
@@ -124,18 +157,10 @@ a.linkedin-logo {
     height: 50%;
 }
 
-.github-logo {
-    height: 20px;
-    width: 20px;
-    filter: invert(1);
-   
-}
-
-
 
 .globe-icon {
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
     filter: invert(1);
    
 }
@@ -145,6 +170,7 @@ a.linkedin-logo {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 10px;
 }
 
 .card h1 {
@@ -157,4 +183,109 @@ a.linkedin-logo {
 
 .card p {
     font-size: 15px;
+}
+
+@media only screen and (min-width: 750px) {
+    /* 991px has become standard since use by bootstrap */
+
+    /* small nav-img should not display */
+    .nav-img {
+        display: none;
+    }
+
+    /* menu icon should not display */
+    .menu-icon {
+        display: none;
+    }
+
+    .nav-bar {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Nav menu items should appear horizontally across navbar */
+    #nav-links-container {
+        display: inline-block;
+        
+        /* justify-content: flex-end; */
+        margin-top: 0;
+    }
+    .nav-links a {
+    text-decoration: none;
+    padding: 30px;
+    font-size: 30px;
+    /* align-items: flex-end; */
+    }
+
+    /*contact icons in body should no display but nav contact icons should*/
+    #body-contact-icons-container {
+        display: none;
+       
+    }
+
+    #nav-contact-icons-container {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        
+    }
+
+    #nav-github-logo {
+        filter: invert(1);
+        height: 60px;
+        width: 60px;
+        padding-bottom: 30px;
+        padding-right: 15px;
+    }
+
+    #nav-linkedin-logo {
+        height: 60px;
+        width: 60px;
+        padding-bottom: 30px;
+        padding-left: 15px;
+    }
+
+    /*Contact icons work for now but cant make them bigger, should probably download larger ones and replace them*/
+
+    .large-profile-img {
+        display: inline-flex;
+        height: 300px;
+        width: 300px;
+        margin-top: 100px;
+        margin-left: 20px;
+    }
+
+    /*Profile img was cut off on sides, should retake to make totally round*/
+
+    .homepage-body-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #homepage-text {
+        width: 60%;
+        margin-left: 0;
+
+    }
+
+    div.about-text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.about-text-container h1 {
+        font-size: 40px;
+    }
+
+    div.about-text-container p {
+        width: 60%;
+        font-size: 20px;
+        line-height: 40px;
+        
+    }
+
+ 
 }
