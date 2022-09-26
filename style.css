@@ -2,6 +2,15 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: white;
+}
+
+body {
+    background-color: #b81365;
+}
+
+.menu-icon {
+    filter: invert(1);
 }
 
 
@@ -12,7 +21,7 @@
     align-items: center;
     width: 100%;
     height: 100px;
-    background-color: aqua;
+    background-color: #140d4f;
 }
 
 #nav-links-container {
@@ -47,43 +56,83 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: aqua;
+    background-color: #140d4f;
     
 }
 
 .nav-links.active a {
     text-decoration: none;
+    padding: 30px;
+    font-size: 30px;
+}
+
+#homepage-text h1 {
+    font-size: 50px;
+    padding: 20px;
+    padding-top: 30px;
+}
+
+#homepage-text p {
+    font-size: 30px;
     padding: 20px;
 }
 
-/* #nav-links-container a.active {
-    background-color: aqua;
+/* h1 {
+    font-size: 40px;
+    padding: 20px;
+}
+
+p {
+    font-size: 20px;
+    padding: 20px; 
 } */
 
+/* Projects Page */
 
-
-
-
-/* nav.nav-links.active {
+#project-card-container {
     display: flex;
     flex-direction: column;
-    align-items: center;;
-    position: absolute;
-    left: 0;
-    top: 0;
+    align-items: center;
+}
+
+.card {
+    background-color: #140d4f;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 300px;
+    margin: 15px;
+    text-align: center;
+
+}
+
+#mars-photo {
     width: 100%;
-    height: 100%;
-    padding-top: 25%; 
-} */
+    height: 50%;
+}
 
-/* close-icon has display: None 
-menu-icon onClick  triggers function and adds class active to nav-links 
-    and they have display flex column
+.github-logo {
+    height: 20px;
+    width: 20px;
+    filter: invert(1);
+   
+}
 
-    while nav-links has class active:
-    menu-icon has display: none 
-    close-icon has display: inline-block(?) 
+.globe-icon {
+    height: 20px;
+    width: 20px;
+    filter: invert(1);
+   
+}
 
-    close-icon onClick triggers function and nav-links
-    loses class active  */ 
+.project-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+.card h1 {
+    font-size: 20px;
+    padding: 10px;
+}
 

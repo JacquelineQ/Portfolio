@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
     <title>Projects</title>
 </head>
 <header>
     <div class="nav-bar">
     <img class ="nav-img" src="stardew_profile.png" alt="Stardew Valley Style Portrait">
     <nav class="nav-links" id="nav-links-container">
-        <a href="#">Home</a>
+        <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
         <a href="contact.html">Contact</a>
@@ -22,5 +24,22 @@
 </header>
 <body>
     <h1>Projects</h1>
+    <div id="project-card-container">
+    <div class="card">
+        <img src="perseverance-route.png" alt="Perseverance's route on Mars" id="mars-photo">
+        <h1>Latest Mars Rover Photos</h1>
+        <p>
+            React app displaying the latest photos taken by the active Mars rovers, Perseverane and Curiosity
+        </p>
+    <div class="project-icons">
+        <a href="https://github.com/JacquelineQ/mars-latest-photos" target="_blank">
+            <img src="github.svg" alt="github logo"  class="github-logo">
+        </a>
+        <a href="mars-latest-photos.vercel.app" target="_blank">
+            <img src="globe-solid.svg" alt="live link globe icon" class="globe-icon">
+        </a>
+    </div>
+    </div>
+    </div>
 </body>
 </html>
