@@ -77,7 +77,7 @@ body {
     padding: 20px;
 }
 
-/* h1 {
+h1 {
     font-size: 40px;
     padding: 20px;
 }
@@ -85,7 +85,20 @@ body {
 p {
     font-size: 20px;
     padding: 20px; 
-} */
+}
+
+a.linkedin-logo {
+    filter: invert(1);
+  
+}
+
+
+
+.contact-icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
 /* Projects Page */
 
@@ -104,6 +117,7 @@ p {
     text-align: center;
 
 }
+
 
 #mars-photo {
     width: 100%;
@@ -130,11 +144,17 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 10px;
+    align-items: center;
 }
 
 .card h1 {
-    font-size: 20px;
-    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    
 }
 
+.card p {
+    font-size: 15px;
+}
